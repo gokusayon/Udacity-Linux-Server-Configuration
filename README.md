@@ -7,14 +7,18 @@ You can visit the web site at http://54.146.228.92/
 
 ## Instructions for SSH access to the instance
 	- Download Private Key below and move it into the folder `~/.ssh` .
-	- Open your terminal and type in
-		```chmod 600 ~/.ssh/My_Key```
 	- In your terminal, type in
-		```ssh -i ~/.ssh/My_Key.rsa @54.146.228.92```
-	5. Development Environment Information
+		```ssh -i path/to/my/key -p 2200 grader@54.146.228.92```
 
 Public IP Address : 54.146.228.92
+
 Private Key : Not Provided here.
+
+SSH Port: 2200
+
+HTTP Port : 80
+
+NTP Port : 123
 
 ## Create a new user named grader and give root access
 	 `sudo adduser grader`
