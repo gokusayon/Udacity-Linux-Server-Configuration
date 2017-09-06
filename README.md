@@ -9,6 +9,7 @@ You can visit the web site at http://54.146.228.92/
 	- Download Private Key below and move it into the folder `~/.ssh` .
 	- In your terminal, type in
 		```ssh -i path/to/my/key -p 2200 grader@54.146.228.92```
+	- Alternatively you can use Remmina (Ubuntu)/ MobaXTerm (Windows)
 
 Public IP Address : 54.146.228.92
 
