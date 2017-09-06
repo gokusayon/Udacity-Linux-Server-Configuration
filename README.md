@@ -1,7 +1,7 @@
 # Udacity-Linux-Server-Configuration
-FSND : Udacity Project 7
+FSND : Udacity Project 7 !
 
-A Linux virtual machine(Amazon Lightsail / Ubuntu) is configured for Item Catalog website. 
+A Linux virtual machine (Amazon Lightsail / Ubuntu) is configured for Item Catalog website. 
 
 You can visit the web site at http://54.146.228.92/ 
 
@@ -13,11 +13,8 @@ You can visit the web site at http://54.146.228.92/
 		```ssh -i ~/.ssh/My_Key.rsa @54.146.228.92```
 	5. Development Environment Information
 
-Public IP Address
-
-54.146.228.92
-	
-Private Key ( is not provided here. )
+Public IP Address : 54.146.228.92
+Private Key : Not Provided here.
 
 ## Create a new user named grader and give root access
 	 `sudo adduser grader`
@@ -45,11 +42,9 @@ Private Key ( is not provided here. )
 	
 	- reload SSH using `service ssh restart`
 	- now you can use ssh to login with the new user you created
-
 		`ssh -i path/to/key grader@54.146.228.92`
 
 ## Update all currently installed packages
-
 	sudo apt-get update
 	sudo apt-get upgrade
 
@@ -58,7 +53,6 @@ Private Key ( is not provided here. )
 - Reload SSH using `sudo service ssh restart`
 
 ## Configure the Uncomplicated Firewall (UFW)
-
 	sudo ufw allow 2200/tcp
 	sudo ufw allow 80/tcp
 	sudo ufw allow 123/udp
@@ -90,7 +84,6 @@ Private Key ( is not provided here. )
 	`sudo apt-get install git`
 
 ## Clone and setup your Catalog App project.
-
 	- Use `cd /var/www` to move to the /var/www directory 
 	- Create the application directory `sudo mkdir catalog`
 	- Move inside this directory using `cd catalog`
@@ -137,8 +130,7 @@ Private Key ( is not provided here. )
 		cd /var/www/catalog
 		sudo nano catalog.wsgi 
 		```
-	- Add the following lines of code to the catalog.wsgi file:
-		
+	- Add the following lines of code to the catalog.wsgi file:		
 		```
 		#!/usr/bin/python
 		import sys
@@ -151,7 +143,6 @@ Private Key ( is not provided here. )
 		```
 
 ## Restart Apache
-
 	-Restart Apache `sudo service apache2 restart `
 
 ## Author
